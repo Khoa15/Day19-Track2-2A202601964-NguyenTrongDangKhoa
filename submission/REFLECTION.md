@@ -29,7 +29,7 @@
 
 ## Điều ngạc nhiên nhất khi làm lab này
 
-Semantic cache ở ngưỡng 0.75 (con số AWS công bố) vẫn để lọt 36% câu trả lời sai trên corpus này — không phải con số an toàn để copy-paste. Và cross-tenant leak xảy ra hoàn toàn im lặng, không exception, không log đỏ.
+Semantic cache ở ngưỡng 0.75 (con số AWS công bố) và để lọt 36% câu trả lời sai trên corpus này. Đây không phải con số an toàn để copy-paste. Và cross-tenant leak xảy ra hoàn toàn im lặng, không exception, không log đỏ.
 
 ---
 
