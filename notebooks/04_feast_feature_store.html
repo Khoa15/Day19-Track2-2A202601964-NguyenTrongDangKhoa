@@ -7796,7 +7796,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f507e0ea">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2aaf9422">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7812,7 +7812,7 @@ Maps to slide §6 (Feast Feature Store) + deliverable bullet 3.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=86cb7ed8">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0504a307">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7837,7 +7837,7 @@ Maps to slide §6 (Feast Feature Store) + deliverable bullet 3.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=26a4b5a2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a76f7620">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7848,7 +7848,7 @@ Maps to slide §6 (Feast Feature Store) + deliverable bullet 3.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=15bb4c69">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6328e265">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7919,7 +7919,7 @@ Maps to slide §6 (Feast Feature Store) + deliverable bullet 3.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c8a5a41b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ca5334ce">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7930,7 +7930,7 @@ Chạy <code>feast apply</code> để Feast đọc file definition và ghi vào 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6fa43c2b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d6ea50c0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7964,17 +7964,158 @@ Chạy <code>feast apply</code> để Feast đọc file definition và ghi vào 
 <pre>STDOUT:
 No project found in the repository. Using project name lab19 defined in feature_store.yaml
 Applying changes for project lab19
-Created project lab19
-Created entity item
-Created entity user
-Created feature view query_velocity_features
-Created feature view user_profile_features
-Created feature view item_popularity_features
+Updated feature view user_profile_features
+	batch_source: type: BATCH_FILE
+timestamp_field: "event_timestamp"
+file_options {
+  uri: "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/app/feast_repo/data/user_profile.parquet"
+}
+data_source_class_type: "feast.infra.offline_stores.file_source.FileSource"
+name: "user_profile_source"
+meta {
+  created_timestamp {
+    seconds: 1787148405
+    nanos: 761934000
+  }
+  last_updated_timestamp {
+    seconds: 1787148405
+    nanos: 823220000
+  }
+}
+ -&gt; type: BATCH_FILE
+timestamp_field: "event_timestamp"
+file_options {
+  uri: "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/app/feast_repo/data/user_profile.parquet"
+}
+data_source_class_type: "feast.infra.offline_stores.file_source.FileSource"
+name: "user_profile_source"
+meta {
+  created_timestamp {
+    seconds: 1787190508
+    nanos: 363109000
+  }
+  last_updated_timestamp {
+    seconds: 1787190508
+    nanos: 363109000
+  }
+}
 
-Created sqlite table lab19_item_popularity_features
-Created sqlite table lab19_query_velocity_features
-Created sqlite table lab19_user_profile_features
+Updated feature view query_velocity_features
+	batch_source: type: BATCH_FILE
+timestamp_field: "event_timestamp"
+file_options {
+  uri: "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/app/feast_repo/data/query_velocity.parquet"
+}
+data_source_class_type: "feast.infra.offline_stores.file_source.FileSource"
+name: "query_velocity_source"
+meta {
+  created_timestamp {
+    seconds: 1787148405
+    nanos: 762319000
+  }
+  last_updated_timestamp {
+    seconds: 1787148405
+    nanos: 822731000
+  }
+}
+ -&gt; type: BATCH_FILE
+timestamp_field: "event_timestamp"
+file_options {
+  uri: "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/app/feast_repo/data/query_velocity.parquet"
+}
+data_source_class_type: "feast.infra.offline_stores.file_source.FileSource"
+name: "query_velocity_source"
+meta {
+  created_timestamp {
+    seconds: 1787190508
+    nanos: 363470000
+  }
+  last_updated_timestamp {
+    seconds: 1787190508
+    nanos: 363470000
+  }
+}
 
+Updated feature view item_popularity_features
+	batch_source: type: BATCH_FILE
+timestamp_field: "event_timestamp"
+file_options {
+  uri: "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/app/feast_repo/data/item_popularity.parquet"
+}
+data_source_class_type: "feast.infra.offline_stores.file_source.FileSource"
+name: "item_popularity_source"
+meta {
+  created_timestamp {
+    seconds: 1787148405
+    nanos: 762133000
+  }
+  last_updated_timestamp {
+    seconds: 1787148405
+    nanos: 823006000
+  }
+}
+ -&gt; type: BATCH_FILE
+timestamp_field: "event_timestamp"
+file_options {
+  uri: "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/app/feast_repo/data/item_popularity.parquet"
+}
+data_source_class_type: "feast.infra.offline_stores.file_source.FileSource"
+name: "item_popularity_source"
+meta {
+  created_timestamp {
+    seconds: 1787190508
+    nanos: 363294000
+  }
+  last_updated_timestamp {
+    seconds: 1787190508
+    nanos: 363294000
+  }
+}
+
+
+No changes to infrastructure
+
+STDERR:
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11&gt;=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy&lt;2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/bin/feast", line 7, in &lt;module&gt;
+    from feast.cli.cli import cli
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/__init__.py", line 26, in &lt;module&gt;
+    from .feature_store import FeatureStore
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/feature_store.py", line 79, in &lt;module&gt;
+    from feast.inference import (
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/inference.py", line 16, in &lt;module&gt;
+    from feast.infra.provider import Provider
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/infra/provider.py", line 28, in &lt;module&gt;
+    from feast.infra.offline_stores.offline_store import OfflineStore, RetrievalJob
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/infra/offline_stores/offline_store.py", line 45, in &lt;module&gt;
+    from feast.torch_wrapper import get_torch
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/torch_wrapper.py", line 19, in &lt;module&gt;
+    _import_torch()
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/torch_wrapper.py", line 11, in _import_torch
+    _torch = importlib.import_module("torch")
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.8-macos-x86_64-none/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/__init__.py", line 1477, in &lt;module&gt;
+    from .functional import *  # noqa: F403
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/functional.py", line 9, in &lt;module&gt;
+    import torch.nn.functional as F
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/nn/__init__.py", line 1, in &lt;module&gt;
+    from .modules import *  # noqa: F403
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/nn/modules/__init__.py", line 35, in &lt;module&gt;
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/nn/modules/transformer.py", line 20, in &lt;module&gt;
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
 
 </pre>
 </div>
@@ -7982,7 +8123,7 @@ Created sqlite table lab19_user_profile_features
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4d281b07">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c902f41b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7993,7 +8134,7 @@ Created sqlite table lab19_user_profile_features
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8b530488">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0bd7cb78">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8024,11 +8165,16 @@ Created sqlite table lab19_user_profile_features
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Materializing <span class="ansi-green-intense-fg ansi-bold">3</span> feature views to <span class="ansi-green-intense-fg ansi-bold">2026-08-19 10:19:45+00:00</span> into the <span class="ansi-green-intense-fg ansi-bold">sqlite</span> online store.
+<pre>Materializing <span class="ansi-green-intense-fg ansi-bold">3</span> feature views to <span class="ansi-green-intense-fg ansi-bold">2026-08-20 01:48:19+00:00</span> into the <span class="ansi-green-intense-fg ansi-bold">sqlite</span> online store.
 
-<span class="ansi-green-intense-fg ansi-bold">query_velocity_features</span> from <span class="ansi-green-intense-fg ansi-bold">2026-08-19 09:20:11+00:00</span> to <span class="ansi-green-intense-fg ansi-bold">2026-08-19 10:19:45+00:00</span>:
-<span class="ansi-green-intense-fg ansi-bold">user_profile_features</span> from <span class="ansi-green-intense-fg ansi-bold">2026-07-20 10:20:11+00:00</span> to <span class="ansi-green-intense-fg ansi-bold">2026-08-19 10:19:45+00:00</span>:
-<span class="ansi-green-intense-fg ansi-bold">item_popularity_features</span> from <span class="ansi-green-intense-fg ansi-bold">2026-08-18 10:20:11+00:00</span> to <span class="ansi-green-intense-fg ansi-bold">2026-08-19 10:19:45+00:00</span>:
+<span class="ansi-green-intense-fg ansi-bold">item_popularity_features</span> from <span class="ansi-green-intense-fg ansi-bold">2026-08-19 14:06:26+00:00</span> to <span class="ansi-green-intense-fg ansi-bold">2026-08-20 01:48:19+00:00</span>:
+<span class="ansi-green-intense-fg ansi-bold">query_velocity_features</span> from <span class="ansi-green-intense-fg ansi-bold">2026-08-19 14:06:26+00:00</span> to <span class="ansi-green-intense-fg ansi-bold">2026-08-20 01:48:19+00:00</span>:
+<span class="ansi-green-intense-fg ansi-bold">user_profile_features</span> from <span class="ansi-green-intense-fg ansi-bold">2026-08-19 14:06:26+00:00</span> to <span class="ansi-green-intense-fg ansi-bold">2026-08-20 01:48:19+00:00</span>:
+
+STDERR (tail):
+._get_default_device()),  # torch.device('cpu'),
+/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
 
 </pre>
 </div>
@@ -8036,7 +8182,7 @@ Created sqlite table lab19_user_profile_features
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9f58c89a">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f1b9962d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8048,7 +8194,7 @@ Rubric threshold: P99 &lt; 10ms cho lookup khi online store là SQLite local
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5043c5da">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2fb8831e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8090,16 +8236,102 @@ Rubric threshold: P99 &lt; 10ms cho lookup khi online store là SQLite local
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11&gt;=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy&lt;2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "&lt;frozen runpy&gt;", line 198, in _run_module_as_main
+  File "&lt;frozen runpy&gt;", line 88, in _run_code
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/ipykernel_launcher.py", line 18, in &lt;module&gt;
+    app.launch_new_instance()
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/traitlets/config/application.py", line 1080, in launch_instance
+    app.start()
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/ipykernel/kernelapp.py", line 807, in start
+    self.io_loop.start()
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/tornado/platform/asyncio.py", line 211, in start
+    self.asyncio_loop.run_forever()
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.8-macos-x86_64-none/lib/python3.12/asyncio/base_events.py", line 640, in run_forever
+    self._run_once()
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.8-macos-x86_64-none/lib/python3.12/asyncio/base_events.py", line 1992, in _run_once
+    handle._run()
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.8-macos-x86_64-none/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/ipykernel/kernelbase.py", line 621, in shell_main
+    await self.dispatch_shell(msg, subshell_id=subshell_id)
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/ipykernel/kernelbase.py", line 478, in dispatch_shell
+    await result
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/ipykernel/ipkernel.py", line 372, in execute_request
+    await super().execute_request(stream, ident, parent)
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/ipykernel/kernelbase.py", line 834, in execute_request
+    reply_content = await reply_content
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/ipykernel/ipkernel.py", line 460, in do_execute
+    res = shell.run_cell(
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/ipykernel/zmqshell.py", line 665, in run_cell
+    return super().run_cell(*args, **kwargs)
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/IPython/core/interactiveshell.py", line 3204, in run_cell
+    result = self._run_cell(
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/IPython/core/interactiveshell.py", line 3261, in _run_cell
+    result = runner(coro)
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/IPython/core/async_helpers.py", line 128, in _pseudo_sync_runner
+    coro.send(None)
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/IPython/core/interactiveshell.py", line 3474, in run_cell_async
+    has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/IPython/core/interactiveshell.py", line 3715, in run_ast_nodes
+    if await self.run_code(code, result, async_=asy):
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/IPython/core/interactiveshell.py", line 3775, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "/var/folders/6v/n8qgbwh91f91bkwp9sq6gg280000gn/T/ipykernel_80247/3980663385.py", line 3, in &lt;module&gt;
+    from feast import FeatureStore
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/__init__.py", line 26, in &lt;module&gt;
+    from .feature_store import FeatureStore
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/feature_store.py", line 79, in &lt;module&gt;
+    from feast.inference import (
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/inference.py", line 16, in &lt;module&gt;
+    from feast.infra.provider import Provider
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/infra/provider.py", line 28, in &lt;module&gt;
+    from feast.infra.offline_stores.offline_store import OfflineStore, RetrievalJob
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/infra/offline_stores/offline_store.py", line 45, in &lt;module&gt;
+    from feast.torch_wrapper import get_torch
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/torch_wrapper.py", line 19, in &lt;module&gt;
+    _import_torch()
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/feast/torch_wrapper.py", line 11, in _import_torch
+    _torch = importlib.import_module("torch")
+  File "/Users/mac/.local/share/uv/python/cpython-3.12.8-macos-x86_64-none/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/__init__.py", line 1477, in &lt;module&gt;
+    from .functional import *  # noqa: F403
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/functional.py", line 9, in &lt;module&gt;
+    import torch.nn.functional as F
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/nn/__init__.py", line 1, in &lt;module&gt;
+    from .modules import *  # noqa: F403
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/nn/modules/__init__.py", line 35, in &lt;module&gt;
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/nn/modules/transformer.py", line 20, in &lt;module&gt;
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/Users/mac/Documents/VinUniversity/AI_in_action/Day19-Track2-VectorFeatureStore-Lab-2A202601964-NguyenTrongDangKhoa/.venv/lib/python3.12/site-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Single lookup: 67.37ms
-{'user_id': 'u_001', 'topic_affinity': 'cloud', 'preferred_language': 'vi', 'reading_speed_wpm': 187, 'distinct_topics_24h': 4, 'queries_last_hour': 11}
+<pre>Single lookup: 4349.86ms
+{'user_id': 'u_001', 'preferred_language': 'vi', 'topic_affinity': 'cloud', 'reading_speed_wpm': 187, 'distinct_topics_24h': 4, 'queries_last_hour': 11}
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=51ce1df6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f04558e0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8109,7 +8341,7 @@ Rubric threshold: P99 &lt; 10ms cho lookup khi online store là SQLite local
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9bfc10d5">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9ee90382">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8153,17 +8385,17 @@ Rubric threshold: P99 &lt; 10ms cho lookup khi online store là SQLite local
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Online lookup latency over 100 calls:
-  P50 = 0.53ms
-  P95 = 0.67ms
-  P99 = 67.82ms
-WARN — P99 = 67.82ms (SQLite trên macOS thường tốt hơn 5ms; Linux thường tốt hơn 1ms)
+  P50 = 0.39ms
+  P95 = 0.44ms
+  P99 = 0.77ms
+PASS — online lookup P99 &lt; 10ms (0.77ms)
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cdd60de3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=64850cbe">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8175,7 +8407,7 @@ WARN — P99 = 67.82ms (SQLite trên macOS thường tốt hơn 5ms; Linux thư�
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=caf2baa0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=36de696b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8210,15 +8442,15 @@ WARN — P99 = 67.82ms (SQLite trên macOS thường tốt hơn 5ms; Linux thư�
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>  user_id           event_timestamp  reading_speed_wpm topic_affinity
-0   u_003 2026-08-19 10:19:45+00:00                201       database
-1   u_002 2026-08-19 09:19:45+00:00                194       security
+0   u_003 2026-08-20 01:48:19+00:00                201       database
+1   u_002 2026-08-20 00:48:19+00:00                194       security
 </pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f09784ae">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=76fec920">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
